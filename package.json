@@ -1,0 +1,30 @@
+{
+  "name": "horizon-beyond-v3",
+  "version": "1.0.0",
+  "description": "Third phase of ecommerce project \"Horizon Beyond\" using React.js, mySQL, Node.js, Express, Chia, and Mocha made during Road 2 Hire.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgaleas-clockwork/horizon-beyond-V3.git"
+  },
+  "author": "Luis Galeas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisgaleas-clockwork/horizon-beyond-V3/issues"
+  },
+  "homepage": "https://github.com/luisgaleas-clockwork/horizon-beyond-V3#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-router": "0.0.1",
+    "helmet": "^3.21.1",
+    "mocha": "^6.2.0",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.19.2"
+  }
+}
