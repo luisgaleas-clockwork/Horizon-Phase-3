@@ -1,5 +1,6 @@
 const express = require ("express");
-const app = express()
+const app = express();
+const port = 4000
 
 const productsAPI = require("./routes/productsAPI");
 const contactsAPI = require("./routes/contactAPI");
@@ -10,6 +11,6 @@ app.use("/api", contactsAPI)
 app.use("/api", product_idAPI)
 
 
-app.listen(4000, () =>{
-    console.log('products server listening on port 4000')
+app.listen(port, () =>{
+    console.log(`products server listening on port ${port}`)
 })
