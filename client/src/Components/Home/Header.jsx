@@ -14,7 +14,7 @@ const Heading = () => {
             <img className="d-block w-100"
               src="https://images.unsplash.com/photo-1496858705185-1f25b056e4a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="people at a concert" />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="slider__text">
               <h1>Welcome to Horizon</h1>
               <p>The place where music lives free.</p>
             </div>
@@ -23,7 +23,7 @@ const Heading = () => {
             <img className="d-block w-100"
               src="https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80"
               alt="City scape of the city toronto" />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="slider__text">
               <h2>Drake's Origin: Toronto, Canada</h2>
               <p>Listen to "Views" from drake out now!</p>
             </div>
@@ -32,7 +32,7 @@ const Heading = () => {
             <img className="d-block w-100"
               src="https://images.unsplash.com/photo-1488779382325-da88fd3175e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
               alt="Hallway with a neon question" />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="slider__text">
               <h2>Contact Us</h2>
               <p>Ask us any questions. We are always willing to fullfil your needs</p>
             </div>

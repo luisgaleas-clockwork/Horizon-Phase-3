@@ -1,31 +1,34 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-const NavBar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-bg-orange fixed-top">
-            <Link className="navbar-brand logo" to="/"><img
-                src="https://www.shareicon.net/download/2015/12/07/683856_arrow_512x512.png" alt="horizon beyond logo" /></Link>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/products">Products</Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link className="nav-link" to="/contact">Contact us</Link>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+class NavBar extends React.Component {
+    constructor() {
+        super()
 
-    )
+        this.openFunction = () => {
+            document.getElementById("menu").classList.add("menu__show")
+            document.getElementById("mainbox").classList.add("mainbox__show")
+        }
+
+        this.closeFunction = () => {
+            document.getElementById("menu").classList.remove("menu__show");
+            document.getElementById("mainbox").classList.remove("mainbox__show")
+        }
+    }
+
+    render() {
+        return (
+            <nav>
+                <div id="mainbox" onClick={this.openFunction}>&#9776;</div>
+                <div id="menu" className="sidemenu">
+                    <Link className="closebtn" onClick={this.closeFunction}>&times;</Link>
+                    <Link className="nav-link" to="/" onClick={this.closeFunction}>Home <span className="sr-only">(current)</span></Link>
+                    <Link className="nav-link" to="/products" onClick={this.closeFunction}>Products</Link>
+                    <Link className="nav-link" to="/contact" onClick={this.closeFunction}>Contact us</Link>
+                </div>
+            </nav>
+        )
+    }
 }
 
 export default NavBar

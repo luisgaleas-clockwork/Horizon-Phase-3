@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Intro = () => {
   return (
-    <section>
+    <section className="jumbo__bg">
       <div className="jumbotron jumbo-home" id="musictype">
         <div className="container">
           <h3 className="display-4">Music For Every Type Of Vibe</h3>
