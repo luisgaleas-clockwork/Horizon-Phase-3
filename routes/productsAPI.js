@@ -1,5 +1,6 @@
 const mysql = require ("mysql");
 const router = require("express").Router()
+require('dotenv').config();
 
 const productSelect = 
 `SELECT 
@@ -16,7 +17,7 @@ const productSelect =
 const connection = mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"password",
+    password:process.env.MYPASSWORD,
     port:"3306",
     database:"horizon_db"
 })
