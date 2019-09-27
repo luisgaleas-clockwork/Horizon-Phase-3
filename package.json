@@ -4,7 +4,14 @@
   "description": "Third phase of ecommerce project \"Horizon Beyond\" using React.js, mySQL, Node.js, Express, Chia, and Mocha made during Road 2 Hire.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run start:dev || npm run start:prod",
+    "server": "nodemon horizon_server.js",
+    "start:prod": "node horizon_server.js",
+    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "build": "cd client && npm run start",
+    "test": "cd client && npm run start",
+    "eject": "cd client && npm run start"
   },
   "repository": {
     "type": "git",
@@ -18,7 +25,7 @@
   "homepage": "https://github.com/luisgaleas-clockwork/horizon-beyond-V3#readme",
   "dependencies": {
     "chai": "^4.2.0",
-    "cors": "^2.8.5",
+    "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-router": "0.0.1",
