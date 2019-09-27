@@ -1,25 +1,27 @@
 import React from "react"
 
 const Cover = (props) => {
-    const {state, click} = props
-    return(
-        <div>
-             <div className="project__container">
-            <div className="project__image_container">
-                <img src={state.img_url} />
-                <div className="project__text_container">
-                    <h3>{state.product_name}</h3>
-                    <h4>{state.artist}</h4>
-                    <p>${state.price}</p>
-                    <p>{state.descripton}</p>
-                    <button onClick={click}>This is a button</button>
+    const { state } = props
+    return (
+        <div className="card__container">
+            <div className="product__container">
+                <div className="product__image_container">
+                    <img src={state.img_url} />
+                    <div className="product__text_container">
+                        <h3>{state.product_name}</h3>
+                        <h4>{state.artist}</h4>
+                        <p className="hide">${state.price}</p>
+                        <p>{state.descripton}</p>
+                    </div>
                 </div>
             </div>
-            <p></p>
-        </div>
+            <div className="display_text">
+                        <h3>{state.product_name}</h3>
+                        <p>Price: ${state.price}</p>
+                    </div>
         </div>
     )
-    
+
 }
 
 export default Cover

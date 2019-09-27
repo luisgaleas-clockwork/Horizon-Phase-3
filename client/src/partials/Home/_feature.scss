@@ -2,7 +2,7 @@
   .feature__container {
     img {
       margin-top: 5vh;
-      height: 200px;
+      height: 100%;
       width: 100%;
     }
     padding-top: 50px;
@@ -22,7 +22,7 @@
   }
   .feature__bg {
     background-color: #303030;
-    height: 65vh;
+    height: 100vh;
   }
 }
 
@@ -30,10 +30,10 @@
   .feature__container {
     img {
       margin-top: 5vh;
-      height: 400px;
+      height: 450px;
       width: 100%;
     }
-    padding-top: 50px;
+    padding-top: 80px;
     width: 60%;
     margin: auto;
   }
@@ -51,17 +51,44 @@
   }
   .feature__bg {
     background-color: #303030;
-    height: 70vh;
+    height: 100vh;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .feature__container {
+    padding-top: 150px;
+    width: 40%;
     img {
       margin-top: 5vh;
-      height: 600px;
+      height: 400px;
       width: 100%;
     }
   }
- 
+  .feature__bg{
+    height:100vh;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .feature__container {
+    padding-top: 150px;
+    display: flex;
+    width: 60%;
+    img {
+      height: 100%;
+      width: 80%;
+    }
+  }
+  .feature__bg {
+    height: 100vh;
+  }
+  .feature__text {
+    h4 {
+      font-size: 2em;
+      padding-top: 3vh;
+    }
+    p {
+      padding-top:10vh;
+    }
+  }
 }

@@ -21,8 +21,7 @@
     }
 
     img {
-      // margin-top:5vh;
-
+      margin-top: 5vh;
       height: 225px;
       width: 100%;
       padding: 0;
@@ -34,7 +33,6 @@
     // }
   }
   .row {
-    margin-top: 5vh;
     margin:auto;
   }
   #Ac2,
@@ -49,7 +47,7 @@
 }
 @media only screen and (min-width: 768px) {
   .jumbo-home {
-    height: 43vh;
+    height: 40vh;
     overflow: show;
     h3 {
       font-size: 2em;
@@ -69,7 +67,7 @@
     // }
   }
   .row {
-    margin-top: 10vh;
+    margin-top: 1vh;
   }
   #Ac2,
   #Ac3 {
@@ -83,7 +81,7 @@
 }
 @media only screen and (min-width: 1024px){
     .jumbo-home {
-        height: 43vh;
+        height: 35vh;
         overflow: show;
         h3 {
           font-size: 2em;

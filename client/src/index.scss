@@ -1,5 +1,10 @@
-@import "./partials/reset";
-@import "./partials//navbar";
-@import "./partials/slider";
-@import "./partials/jumbo_intro";
-@import "./partials/feature"
+//Utility SCSS
+@import "./partials/utility/reset";
+@import "./partials/utility/navbar";
+//Home page SCSS
+@import "./partials/Home/slider";
+@import "./partials/Home/jumbo_intro";
+@import "./partials/Home/feature";
+//Product SCSS
+@import "./partials/Products/product";
+@import "./partials/Products/button.scss";
