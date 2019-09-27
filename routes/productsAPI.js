@@ -1,9 +1,9 @@
-const mysql = require ("mysql");
+const mysql = require("mysql");
 const router = require("express").Router()
 require('dotenv').config();
 
-const productSelect = 
-`SELECT 
+const productSelect =
+    `SELECT 
         Products.idProducts,
         Products.product_name,
         Products.descripton,
@@ -15,27 +15,32 @@ const productSelect =
     INNER JOIN Price ON Price.idProducts = Products.idProducts;`
 
 const connection = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:process.env.MYPASSWORD,
-    port:"3306",
-    database:"horizon_db"
+    host: "localhost",
+    user: "root",
+    password: process.env.MYPASSWORD,
+    port: "3306",
+    database: "horizon_db"
 })
 
-connection.connect()
+// connection.connect()
 
 
-router.get("/product", (req,res) => {
-    connection.query(productSelect,(err,results) =>{
-        if (err){
+router.get("/product", (req, res) => {
+    connection.query(productSelect, (err, results) => {
+        if (err) {
             console.log(err)
             return res.send(err)
         } else {
             return res.json({
-                data:results
+                data: results
             })
         }
     })
 })
+
+
+
+
+
 
 module.exports = router;

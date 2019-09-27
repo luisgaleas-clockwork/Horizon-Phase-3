@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
     database:"horizon_db"
 })
 
-connection.connect()
+// connection.connect()
 
 
 router.get("/contacts", (req,res) => {
@@ -27,5 +27,10 @@ router.get("/contacts", (req,res) => {
         }
     })
 })
+// /api/contacts 
+
+// /api/product
+
+// /api/productfilter/
 
 module.exports = router;
