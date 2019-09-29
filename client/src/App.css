@@ -621,5 +621,104 @@ table {
     padding-bottom: 50px;
   }
 }
+@media only screen and (min-width: 320px) {
+  .form-main {
+    background-color: #222;
+    height: 100vh;
+  }
+
+  .form-bg {
+    height: 80vh;
+    padding-top: 20vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: firebrick;
+    border-radius: 10%;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    padding: 10px;
+  }
+  form input {
+    margin-top: 1vh;
+  }
+  form h2 {
+    color: white;
+  }
+  form textarea {
+    margin-top: 3vh;
+    width: 100%;
+    height: 15vh;
+  }
+  form button {
+    margin-top: 3vh;
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: floralwhite;
+  }
+  form .left-align {
+    text-align: left;
+    margin-top: 2vh;
+  }
+
+  .comment_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    color: white;
+    padding: 5px;
+  }
+  .comment_section p {
+    margin-top: 2vh;
+  }
+
+  .comments {
+    margin-top: 2vh;
+    padding: 10px;
+    background-color: #b00020;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .form-bg {
+    padding: 150px;
+  }
+
+  form {
+    height: 50vh;
+    padding: 40px;
+  }
+
+  .comment_section {
+    padding: 10vw;
+  }
+
+  .comments {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  form {
+    width: 40vw;
+    height: 65vh;
+  }
+
+  .comment_section {
+    padding: 20vw;
+  }
+  .comment_section p {
+    margin-top: 30px;
+  }
+
+  .comments {
+    padding: 20px;
+    margin-top: 30px;
+  }
+}
 
 /*# sourceMappingURL=App.css.map */

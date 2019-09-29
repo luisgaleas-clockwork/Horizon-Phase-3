@@ -1,12 +1,44 @@
 import React from 'react'
 import Form from '../Components/Contact/ConatactForm'
+import Comment from '../Components/Contact/Comment'
 
-const Contact = () => {
-    return (
-        <div>
-            <Form />
-        </div>
-    )
+class Contact extends React.Component {
+    constructor() {
+        super()
+        this.state = {
+            contact: []
+        }
+    }
+
+    componentDidMount() {
+        fetch("/api/contacts")
+            .then((response) => {
+                console.log('response - ', response);
+                return response.json();
+            }
+            ).then((jsonData) => {
+                console.log(jsonData.data)
+                return jsonData.data;
+            }
+            ).then((jsonStr) => {
+                this.setState({ contact: jsonStr });
+                console.log(this.state)
+            }).catch((e) => console.log('error - ', e));
+    }
+
+    render() {
+        console.log(`this.state -`, this.state)
+        return (
+            <div>
+                <Form />
+                <div className="comment_section">
+                    {this.state.contact.map((info) => {
+                        return <Comment state={info} />
+                    })}
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Contact
