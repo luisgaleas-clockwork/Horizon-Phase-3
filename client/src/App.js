@@ -8,8 +8,6 @@ import NavBar from './Components/Utility/Navbar'
 import Footer from './Components/Utility/Footer'
 //css
 import './App.css'
-//bootstrap validation
-import './Components/bootstrapValidation'
 
 function App() {
     return (

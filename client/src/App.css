@@ -70,6 +70,7 @@ table {
     margin-top: 20px;
     margin-left: 20px;
     z-index: 1;
+    background: #b00020;
   }
 
   .mainbox__show {
@@ -152,25 +153,76 @@ table {
     visibility: hidden;
   }
 }
-.info_items {
-  display: flex;
-  padding-top: 5px;
-}
-.info_items i, .info_items p {
-  padding: 10px;
-  color: white;
-}
-.info_items i {
-  width: 35px;
-  background: #b00020;
-  border-radius: 50%;
-}
+@media only screen and (min-width: 320px) {
+  .info_items {
+    display: flex;
+    padding-top: 5px;
+  }
+  .info_items i,
+.info_items p {
+    padding: 10px;
+    color: white;
+  }
+  .info_items i {
+    font-size: 0.9em;
+    width: 35px;
+    background: #b00020;
+    border-radius: 50%;
+  }
 
-footer {
-  padding-top: 60px;
-  background: #222;
-}
+  footer {
+    padding: 60px 2px;
+    background: #222;
+  }
 
+  .bio {
+    color: white;
+    text-align: center;
+  }
+  .bio h3,
+.bio p {
+    display: none;
+  }
+  .bio i {
+    padding: 30px 10px;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  footer {
+    display: flex;
+  }
+
+  .bio {
+    text-align: left;
+    padding: 10px;
+    width: 30vw;
+    margin-left: 15vw;
+  }
+  .bio h3,
+.bio p {
+    display: block;
+  }
+  .bio p {
+    margin-top: 2vh;
+  }
+  .bio i {
+    padding: 30px, 10px;
+  }
+
+  .info_items {
+    margin-left: 30px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .bio {
+    margin-left: 25vw;
+  }
+
+  .info_items {
+    margin-left: 10vw;
+  }
+}
 @media only screen and (min-width: 320px) {
   .carousel-indicators {
     display: none;
@@ -457,6 +509,7 @@ footer {
     background: red;
     position: relative;
     width: 100%;
+    box-shadow: 10px 10px 10px #222;
   }
   .product__image_container img {
     height: 100%;
@@ -625,19 +678,49 @@ footer {
   .filter_bg {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
   }
+
+  .genre {
+    display: flex;
+    height: 15vh;
+  }
+  .genre h3 {
+    margin: auto;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: white;
+  }
+  .genre select {
+    height: 35px;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-left: 0;
+  }
 }
 @media only screen and (min-width: 768px) {
   .filter_btn {
     width: 60%;
+    height: 10vh;
   }
   .filter_btn button {
     height: 40px;
     width: 15vw;
   }
+
+  .genre {
+    height: 10vh;
+    margin-bottom: 5vh;
+  }
+  .genre select {
+    width: 15vw;
+  }
 }
 @media only screen and (min-width: 1400px) {
-  .filter_bg {
-    padding-bottom: 50px;
+  .genre {
+    height: 10vh;
+    margin-bottom: 5vh;
+  }
+  .genre select {
+    width: 15vw;
   }
 }
 @media only screen and (min-width: 320px) {

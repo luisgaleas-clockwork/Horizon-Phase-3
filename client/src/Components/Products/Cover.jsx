@@ -1,26 +1,29 @@
 import React from "react"
 
 const Cover = (props) => {
-    const { state } = props
+    const { state,info } = props
+    if (state.genre == "none" || info.genre == state.genre) {
     return (
         <div className="card__container">
             <div className="product__container">
                 <div className="product__image_container">
-                    <img src={state.img_url} />
+                    <img src={info.img_url} />
                     <div className="product__text_container">
-                        <h3>{state.product_name}</h3>
-                        <h4>{state.artist}</h4>
-                        <p className="hide">${state.price}</p>
-                        <p>{state.descripton}</p>
+                        <h3>{info.product_name}</h3>
+                        <h4>{info.artist}</h4>
+                        <p className="hide">${info.price}</p>
+                        <p>{info.descripton}</p>
+
                     </div>
                 </div>
             </div>
             <div className="display_text">
-                        <h3>{state.product_name}</h3>
-                        <p>Price: ${state.price}</p>
-                    </div>
+                <h3>{info.product_name}</h3>
+                <p>Price: ${info.price}</p>
+            </div>
         </div>
     )
+} else return null
 
 }
 

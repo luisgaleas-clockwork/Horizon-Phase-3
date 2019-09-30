@@ -1,5 +1,4 @@
 import React from 'react'
-import '../bootstrapValidation'
 
 const Form = () => {
     return (

@@ -9,8 +9,15 @@ class Product extends React.Component {
 
     this.state = {
       album: [],
+      genre: "none"
     }
 
+    this.musicGenre = (e) => {
+      console.log('VALUE CHANGED', e.target.value)
+      this.setState({ genre: e.target.value }, () => {
+        console.log('HEY, IM INSIDE THE CALLBACK AFTER SETSTATE', this.state.genre)
+      })
+    }
     this.none = () => {
       fetch("/api/product")
         .then((response) => {
@@ -77,10 +84,10 @@ class Product extends React.Component {
     return (
       <div className="App">
         <PHeader />
-        <Filter none={this.none} high={this.high} low={this.low} />
+        <Filter none={this.none} high={this.high} low={this.low} genre={this.musicGenre} />
         <div className="cover__container">
           {this.state.album.map((info) => {
-            return <Cover state={info} click={this.click} />
+            return <Cover info={info} state={this.state}click={this.click} />
           })}
         </div>
       </div>

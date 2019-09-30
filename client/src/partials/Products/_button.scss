@@ -2,7 +2,7 @@
   .filter_btn {
     button {
       height: 35px;
-      width:23vw;
+      width: 23vw;
       background-color: white;
       border-radius: 5px 5px 5px 5px;
     }
@@ -14,21 +14,49 @@
     justify-content: space-evenly;
   }
   .filter_bg {
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0));
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    // display: flex;
+  }
+  .genre {
+    display: flex;
+    height: 15vh;
+    h3 {
+      margin: auto;
+      margin-right: 10px;
+      font-size: 1.5em;
+      color: white;
+    }
+    select {
+      height: 35px;
+      background-color: whitesmoke;
+      margin: auto;
+      margin-left: 0;
+    }
   }
 }
-@media only screen and (min-width: 768px){
-    .filter_btn {
-        button {
-          height: 40px;
-          width:15vw;
-        }
-        width: 60%;
-      }
-}
-@media only screen and (min-width: 1400px){
-    .filter_bg{
-    padding-bottom:50px;
+@media only screen and (min-width: 768px) {
+  .filter_btn {
+    button {
+      height: 40px;
+      width: 15vw;
     }
+    width: 60%;
+    height: 10vh;
+  }
+  .genre {
+    height: 10vh;
+    margin-bottom: 5vh;
+    select {
+      width: 15vw;
+    }
+  }
 }
-
+@media only screen and (min-width: 1400px) {
+  .genre {
+    height: 10vh;
+    margin-bottom: 5vh;
+    select {
+      width: 15vw;
+    }
+  }
+}
