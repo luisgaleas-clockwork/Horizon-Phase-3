@@ -8,8 +8,7 @@ const Filter = (props) => {
                 <button onClick={none}>None</button>
                 <button onClick={high}>Highest Price</button>
                 <button onClick={low}>Lowest Price</button>
-                
-                <input type="text" name="fname" />
+
             </div>
         </div>
     )

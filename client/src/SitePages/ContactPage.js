@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from '../Components/Contact/ConatactForm'
+import Form from '../Components/Contact/ContactForm'
 import Comment from '../Components/Contact/Comment'
 
 class Contact extends React.Component {
@@ -29,8 +29,9 @@ class Contact extends React.Component {
     render() {
         console.log(`this.state -`, this.state)
         return (
-            <div>
+            <div className="contact-main">
                 <Form />
+                <h2>Customer Feedback</h2>
                 <div className="comment_section">
                     {this.state.contact.map((info) => {
                         return <Comment state={info} />

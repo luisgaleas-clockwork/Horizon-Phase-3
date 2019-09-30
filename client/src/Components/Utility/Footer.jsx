@@ -4,23 +4,21 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="container footer">
-        <div className="row">
-          <div className="col-md social">
-            <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
-          </div>
-          <div className="col-md social">
-            <a href="https://www.instagram.com/luisi.g__/"><i className="fab fa-instagram"></i></a>
-          </div>
-          <div className="col-md social">
-            <a href="https://twitter.com/?lang=en"><i className="fab fa-twitter"></i></a>
-          </div>
-          <div className="col-md social">
-            <Link to="/contact"><i className="fas fa-phone"></i></Link>
-          </div>
+      <div className="info_list">
+        <div className="info_items">
+        <i class="fas fa-location-arrow"></i>
+          <p>123 Sesame St
+            Charlote, NC 28215</p>
+        </div>
+        <div className="info_items">
+        <i class="fas fa-id-badge"></i>
+          <p>(704)-232-8701</p>
+        </div>
+        <div className="info_items">
+        <i class="fas fa-envelope-open-text"></i>
+          <p>Luis.galeasjr@gmail.com</p>
         </div>
       </div>
-      <p>&copy; Luis Galeas, 2019</p>
     </footer>
   )
 }

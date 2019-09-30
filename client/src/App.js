@@ -19,8 +19,7 @@ function App() {
                 <Route exact path="/" component={IndexPage} />
                 <Route exact path="/products" component={Product} />
                 <Route exact path="/contact" component={Contact} />
-                {/* <Footer /> */}
-
+                <Footer />
             </div>
         </Router>
     )

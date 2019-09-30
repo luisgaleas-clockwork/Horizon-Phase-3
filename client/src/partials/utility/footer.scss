@@ -1,0 +1,17 @@
+.info_items{
+    display: flex;
+    padding-top:5px;
+    i,p{
+        padding:10px;
+        color:white;
+    }
+    i{
+        width:35px;
+        background: #b00020;
+        border-radius: 50%;
+    }
+}
+footer{
+    padding-top:60px;
+    background:#222;
+}
