@@ -1,20 +1,9 @@
-const mysql = require ("mysql");
 const router = require("express").Router()
+
 require('dotenv').config();
 
 const productSelect = "SELECT * FROM Contacts"
-
-const connection = mysql.createConnection({
-    host:"localhost",
-    user:"root",
-    password:process.env.MYPASSWORD,
-    port:"3306",
-    database:"horizon_db"
-})
-
-// connection.connect()
-
-
+const connection = require('../dbConnection')
 router.get("/contacts", (req,res) => {
     connection.query(productSelect,(err,results) =>{
         if (err){
@@ -27,10 +16,5 @@ router.get("/contacts", (req,res) => {
         }
     })
 })
-// /api/contacts 
-
-// /api/product
-
-// /api/productfilter/
 
 module.exports = router;

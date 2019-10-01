@@ -1,6 +1,8 @@
-const mysql = require("mysql");
 const router = require("express").Router()
+
 require('dotenv').config();
+
+const connection =require('../dbConnection')
 
 const productMinSelect =
     `SELECT 
@@ -9,6 +11,7 @@ const productMinSelect =
         Products.descripton,
         Products.img_url,
         Products.artist,
+        Products.genre,
         Price.price,
         Price.currency
     FROM Products
@@ -22,20 +25,12 @@ const productMaxSelect =
         Products.descripton,
         Products.img_url,
         Products.artist,
+        Products.genre,
         Price.price,
         Price.currency
     FROM Products
     INNER JOIN Price ON Price.idProducts = Products.idProducts
     ORDER BY Price.price DESC`
-
-
-const connection = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: process.env.MYPASSWORD,
-    port: "3306",
-    database: "horizon_db"
-})
 
 // connection.connect()
 
@@ -43,7 +38,7 @@ router.get("/productfilter", (req, res) => {
     let maxPrice = req.query.maxp
     let minimumPrice = req.query.minp
 
-    if (!maxPrice && minimumPrice) {
+    if (minimumPrice) {
         connection.query(productMinSelect, (err, results) => {
             if (err) {
                 console.log(err)
@@ -54,7 +49,7 @@ router.get("/productfilter", (req, res) => {
                 })
             }
         })
-    } else if (maxPrice && !minimumPrice) {
+    } else if (maxPrice) {
         connection.query(productMaxSelect, (err, results) => {
             if (err) {
                 console.log(err)
