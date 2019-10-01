@@ -30,6 +30,13 @@
       font-size: 2em;
     }
   }
+  a {
+    color:#b00020;
+    transition: 1s;
+  }
+  a:hover{
+    color:#b1374d
+  }
 }
 
 @media only screen and (min-width: 768px) {

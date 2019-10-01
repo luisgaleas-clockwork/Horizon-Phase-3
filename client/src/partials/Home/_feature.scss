@@ -38,11 +38,7 @@
     margin: auto;
   }
   .feature__text {
-    h3 {
-      font-size: 2.4em;
-    }
     h4 {
-      font-size: 2em;
       padding-top: 10px;
     }
     p {
@@ -71,7 +67,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .feature__container {
-    padding-top: 150px;
+    padding-top: 110px;
     display: flex;
     width: 60%;
     img {
@@ -84,7 +80,6 @@
   }
   .feature__text {
     h4 {
-      font-size: 2em;
       padding-top: 3vh;
     }
     p {

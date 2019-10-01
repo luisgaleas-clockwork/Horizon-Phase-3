@@ -16,16 +16,16 @@ const Heading = () => {
               alt="people at a concert" />
             <div className="slider__text">
               <h1>Welcome to Horizon</h1>
-              <p>The place where music lives free.</p>
+              <h3>The place where music lives free.</h3>
             </div>
           </div>
           <div className="carousel-item">
             <img className="d-block w-100"
-              src="https://images.unsplash.com/photo-1505964253539-4ca5a36328dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80"
+              src="https://images.unsplash.com/photo-1499382926300-90a93d2d9990?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="City scape of the city toronto" />
             <div className="slider__text">
               <h2>Drake's Origin: Toronto, Canada</h2>
-              <p>Listen to "Views" from drake out now!</p>
+              <h3>Listen to "Views" from drake out now!</h3>
             </div>
           </div>
           <div className="carousel-item">
@@ -34,7 +34,7 @@ const Heading = () => {
               alt="Hallway with a neon question" />
             <div className="slider__text">
               <h2>Contact Us</h2>
-              <p>Ask us any questions. We are always willing to fullfil your needs</p>
+              <h3>Ask us any questions. We are always willing to fullfil your needs</h3>
             </div>
           </div>
         </div>

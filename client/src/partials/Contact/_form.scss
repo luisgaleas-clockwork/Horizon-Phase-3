@@ -23,7 +23,6 @@
     }
     h1 {
       text-align: center;
-      font-size: 1.9em;
       margin-top: 3vh;
       color: white;
     }
@@ -44,17 +43,20 @@
     }
   }
   .comment_section {
+    background: #222;
+    width:100%;
+    padding:0px 20px;
+    margin:auto;
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 5px;
     p {
       margin-top: 2vh;
     }
  
   }
   .comments {
-    margin-top: 3vh;
+    margin: 1.5vh 0vw;
     padding: 10px;
     background-color: #b00020;
     border-radius: 5px;
@@ -66,11 +68,10 @@
   h2{
     color:white;
     padding-left:10px;
-    font-size:1.5em;
     padding-bottom: 2vh;
   }
   .contact-main{
-    background:linear-gradient(#b00020, #222);
+    background:linear-gradient(#b00020, #353535);
   }
 }
 
@@ -85,19 +86,14 @@
     height: 50vh;
     padding: 40px;
     h1 {
-      font-size: 3em;
       margin-top: 1vh;
     }
   }
  h2{
-   font-size:3em;
    text-align: center;
    padding-top:5vh;
  }
 
-  .comment_section {
-    padding: 50px;
-  }
   .comments {
     padding: 20px;
     margin-top:2vh;
@@ -116,7 +112,9 @@
     }
   }
   .comment_section {
-    padding: 100px 250px;
+    width:60%;
+    border-radius: 5px;
+
     p {
       margin-top: 30px;
     }
@@ -127,5 +125,8 @@
   }
   h2{
     padding-top:10vh;
+  }
+  .contact-main{
+    padding-bottom: 10vh;
   }
 }

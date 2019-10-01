@@ -9,7 +9,7 @@ const Cover = (props) => {
                 <div className="product__image_container">
                     <img src={info.img_url} />
                     <div className="product__text_container">
-                        <h3>{info.product_name}</h3>
+                        <h4>{info.product_name}</h4>
                         <h4>{info.artist}</h4>
                         <p className="hide">${info.price}</p>
                         <p>{info.descripton}</p>

@@ -6,8 +6,8 @@ const Intro = () => {
     <section className="jumbo__bg">
       <div className="jumbotron jumbo-home" id="musictype">
         <div className="container">
-          <h3 className="display-4">Music For Every Type Of Vibe</h3>
-          <p className="lead">Chill evenings to crazy nights. We have everything to set every type of mood.</p>
+          <h3>Music For Every Type Of Vibe</h3>
+          <p>Chill evenings to crazy nights. We have everything to set every type of mood.</p>
           <div className="container" id="albumcover">
             <div className="row">
               <div className="col-md  " id="Ac1">

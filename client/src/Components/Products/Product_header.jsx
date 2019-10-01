@@ -4,7 +4,7 @@ const PHeader = () => {
     return (
         <div className="product_heading">
             <h1>Discover Your Type Of Vibe</h1>
-            <p>Enjoy from our lateset selection!</p>
+            <h3>Enjoy from our lateset selection!</h3>
         </div>
     )
 }

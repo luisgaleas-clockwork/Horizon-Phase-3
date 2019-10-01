@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin|Oswald|Righteous&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -71,6 +72,8 @@ table {
     margin-left: 20px;
     z-index: 1;
     background: #b00020;
+    border-radius: 50%;
+    padding: 3px;
   }
 
   .mainbox__show {
@@ -152,6 +155,19 @@ table {
   .closebtn {
     visibility: hidden;
   }
+
+  .nav-link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 2s ease;
+  }
+
+  .nav-link:hover::after {
+    width: 100%;
+  }
 }
 @media only screen and (min-width: 320px) {
   .info_items {
@@ -186,6 +202,15 @@ table {
   .bio i {
     padding: 30px 10px;
     font-size: 2em;
+  }
+
+  a {
+    color: #b00020;
+    transition: 1s;
+  }
+
+  a:hover {
+    color: #b1374d;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -229,7 +254,6 @@ table {
   }
 
   .slider__text {
-    font-size: 10px;
     color: white;
     z-index: 1;
     position: absolute;
@@ -243,12 +267,7 @@ table {
     justify-content: center;
     text-align: center;
   }
-  .slider__text h2,
-.slider__text h1 {
-    font-size: 1.5em;
-  }
-  .slider__text p {
-    font-size: 1.1em;
+  .slider__text h3 {
     width: 60%;
     margin-top: 5vh;
   }
@@ -258,23 +277,13 @@ table {
   }
 }
 @media only screen and (min-width: 768px) {
-  .slider__text h2,
-.slider__text h1 {
-    font-size: 4em;
-  }
-  .slider__text p {
-    font-size: 2em;
+  .slider__text h3 {
     width: 60%;
     margin-top: 5vh;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .slider__text h2,
-.slider__text h1 {
-    font-size: 6em;
-  }
-  .slider__text p {
-    font-size: 3em;
+  .slider__text h3 {
     width: 60%;
     margin-top: 5vh;
   }
@@ -299,12 +308,8 @@ table {
     border-radius: 0;
     color: #e8e2da;
   }
-  .jumbo-home h3 {
-    font-size: 1.3em;
-  }
   .jumbo-home p {
     margin-top: 5vh;
-    font-size: 1em;
   }
   .jumbo-home img {
     margin-top: 5vh;
@@ -334,12 +339,9 @@ table {
     height: 40vh;
     overflow: show;
   }
-  .jumbo-home h3 {
-    font-size: 2em;
-  }
   .jumbo-home p {
     margin-top: 5vh;
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
   .jumbo-home img {
     height: 180px;
@@ -366,12 +368,8 @@ table {
     height: 35vh;
     overflow: show;
   }
-  .jumbo-home h3 {
-    font-size: 2em;
-  }
   .jumbo-home p {
     margin-top: 5vh;
-    font-size: 1.2em;
   }
   .jumbo-home img {
     height: 220px;
@@ -383,12 +381,8 @@ table {
     height: 65vh;
     overflow: show;
   }
-  .jumbo-home h3 {
-    font-size: 2em;
-  }
   .jumbo-home p {
     margin-top: 5vh;
-    font-size: 1.2em;
   }
   .jumbo-home img {
     height: 300px;
@@ -444,11 +438,7 @@ table {
     width: 100%;
   }
 
-  .feature__text h3 {
-    font-size: 2.4em;
-  }
   .feature__text h4 {
-    font-size: 2em;
     padding-top: 10px;
   }
   .feature__text p {
@@ -477,7 +467,7 @@ table {
 }
 @media only screen and (min-width: 1400px) {
   .feature__container {
-    padding-top: 150px;
+    padding-top: 110px;
     display: flex;
     width: 60%;
   }
@@ -491,7 +481,6 @@ table {
   }
 
   .feature__text h4 {
-    font-size: 2em;
     padding-top: 3vh;
   }
   .feature__text p {
@@ -509,7 +498,7 @@ table {
     background: red;
     position: relative;
     width: 100%;
-    box-shadow: 10px 10px 10px #222;
+    box-shadow: 10px 10px 7px #222;
   }
   .product__image_container img {
     height: 100%;
@@ -530,11 +519,11 @@ table {
     justify-content: center;
     text-align: center;
   }
-  .product__text_container h3 {
-    font-size: 1.3em;
+  .product__text_container h4 {
+    font-size: 1.2em;
+    margin-top: 5px;
   }
   .product__text_container p {
-    font-size: 0.8em;
     width: 80%;
     margin-top: 5vh;
   }
@@ -559,12 +548,8 @@ table {
     padding-top: 10vh;
     color: white;
   }
-  .product_heading h1 {
-    font-size: 1.4em;
-  }
-  .product_heading p {
-    font-size: 1.2em;
-    width: 50%;
+  .product_heading h3 {
+    width: 100%;
     margin: auto;
     margin-top: 3vh;
   }
@@ -574,7 +559,7 @@ table {
   }
 
   .App {
-    background: linear-gradient(#b00020, #222);
+    background: linear-gradient(#b00020, #353535);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -603,11 +588,7 @@ table {
   .product_heading {
     padding: 100px;
   }
-  .product_heading h1 {
-    font-size: 3em;
-  }
   .product_heading p {
-    font-size: 2em;
     width: 100%;
   }
 }
@@ -658,6 +639,14 @@ table {
   .hide {
     display: none;
   }
+
+  .card__container p {
+    margin-top: 2vh;
+  }
+
+  .display_text {
+    margin-top: 3vh;
+  }
 }
 @media only screen and (min-width: 320px) {
   .filter_btn {
@@ -686,7 +675,6 @@ table {
   .genre h3 {
     margin: auto;
     margin-right: 10px;
-    font-size: 1.5em;
     color: white;
   }
   .genre select {
@@ -751,7 +739,6 @@ table {
   }
   form h1 {
     text-align: center;
-    font-size: 1.9em;
     margin-top: 3vh;
     color: white;
   }
@@ -772,17 +759,20 @@ table {
   }
 
   .comment_section {
+    background: #222;
+    width: 100%;
+    padding: 0px 20px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 5px;
   }
   .comment_section p {
     margin-top: 2vh;
   }
 
   .comments {
-    margin-top: 3vh;
+    margin: 1.5vh 0vw;
     padding: 10px;
     background-color: #b00020;
     border-radius: 5px;
@@ -795,12 +785,11 @@ table {
   h2 {
     color: white;
     padding-left: 10px;
-    font-size: 1.5em;
     padding-bottom: 2vh;
   }
 
   .contact-main {
-    background: linear-gradient(#b00020, #222);
+    background: linear-gradient(#b00020, #353535);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -817,18 +806,12 @@ table {
     padding: 40px;
   }
   form h1 {
-    font-size: 3em;
     margin-top: 1vh;
   }
 
   h2 {
-    font-size: 3em;
     text-align: center;
     padding-top: 5vh;
-  }
-
-  .comment_section {
-    padding: 50px;
   }
 
   .comments {
@@ -851,7 +834,8 @@ table {
   }
 
   .comment_section {
-    padding: 100px 250px;
+    width: 60%;
+    border-radius: 5px;
   }
   .comment_section p {
     margin-top: 30px;
@@ -864,6 +848,55 @@ table {
 
   h2 {
     padding-top: 10vh;
+  }
+
+  .contact-main {
+    padding-bottom: 10vh;
+  }
+}
+@media only screen and (min-width: 320px) {
+  h1, h2 {
+    font-family: "Righteous", cursive;
+  }
+
+  h1,
+h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h3, h4 {
+    font-family: "Cabin", sans-serif;
+  }
+
+  p {
+    font-size: 0.9em;
+    font-family: "Oswald", sans-serif;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h1, h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  h4 {
+    font-size: 1.3em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  h1, h2 {
+    font-size: 5em;
   }
 }
 

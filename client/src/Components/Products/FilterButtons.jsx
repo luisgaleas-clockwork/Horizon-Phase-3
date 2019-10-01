@@ -15,6 +15,8 @@ const Filter = (props) => {
                     <option value="none">None</option>
                     <option value="rap">Rap</option>
                     <option value="rock">Rock</option>
+                    <option value="EDM">EDM</option>
+                    <option value="latino">Latino</option>
                     <option value="unknown">Unknown</option>
                 </select>
             </div>
