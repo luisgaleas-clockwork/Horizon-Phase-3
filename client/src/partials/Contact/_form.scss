@@ -105,10 +105,14 @@
   }
   form {
     width: 40vw;
-    height: 70vh;
+    height: 75vh;
     padding: 50px;
     input {
       margin-top: 3vh;
+    }
+    textarea{
+      height:40vh;
+      resize: none;
     }
   }
   .comment_section {
