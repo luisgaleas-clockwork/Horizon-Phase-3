@@ -45,3 +45,12 @@ describe("Checking connection of enpoint /api/productfilter?minp=0", () => {
         });
     });
 })
+
+describe("Checking connection of enpoint /api/", () => {
+    it('Connection', (done) => {
+        request('http://localhost:4000/', (error, response, body) => {
+            expect(response.statusCode).to.equal(200);
+            done();
+        });
+    });
+})
