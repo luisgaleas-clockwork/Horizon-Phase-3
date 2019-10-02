@@ -16,10 +16,7 @@ const productSelect =
         Price.currency
     FROM Products
     INNER JOIN Price ON Price.idProducts = Products.idProducts;`
-
-// connection.connect()
-
-
+    
 router.get("/product", (req, res) => {
     connection.query(productSelect, (err, results) => {
         if (err) {
