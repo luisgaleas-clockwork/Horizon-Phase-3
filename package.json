@@ -9,6 +9,7 @@
     "start:prod": "node horizon_server.js",
     "start:dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd client && npm run start",
+    "install": "cd client && npm install",
     "build": "cd client && npm run start",
     "test": "cd test && mocha",
     "eject": "cd client && npm run start"
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/luisgaleas-clockwork/horizon-beyond-V3#readme",
   "dependencies": {
     "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
