@@ -19,7 +19,7 @@
       margin-top: 3vh;
       height: 10vh;
       padding-left: 10px;
-      border-radius:5px;
+      border-radius: 5px;
     }
     h1 {
       text-align: center;
@@ -44,16 +44,15 @@
   }
   .comment_section {
     background: #222;
-    width:100%;
-    padding:0px 20px;
-    margin:auto;
+    width: 100%;
+    padding: 0px 20px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     color: white;
     p {
       margin-top: 2vh;
     }
- 
   }
   .comments {
     margin: 1.5vh 0vw;
@@ -61,22 +60,22 @@
     background-color: #b00020;
     border-radius: 5px;
     width: 100%;
-    p{
-      padding-left:30px;
+    p {
+      padding-left: 30px;
     }
   }
-  h2{
-    color:white;
-    padding-left:10px;
+  h2 {
+    color: white;
+    padding-left: 10px;
     padding-bottom: 2vh;
   }
-  .contact-main{
-    background:linear-gradient(#b00020, #353535);
+  .contact-main {
+    background: linear-gradient(#b00020, #353535);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .form-main{
+  .form-main {
     height: 65vh;
   }
   .form-bg {
@@ -89,19 +88,19 @@
       margin-top: 1vh;
     }
   }
- h2{
-   text-align: center;
-   padding-top:5vh;
- }
+  h2 {
+    text-align: center;
+    padding-top: 5vh;
+  }
 
   .comments {
     padding: 20px;
-    margin-top:2vh;
+    margin-top: 2vh;
   }
 }
 @media only screen and (min-width: 1400px) {
-  .form-main{
-    height:90vh;
+  .form-main {
+    height: 90vh;
   }
   form {
     width: 40vw;
@@ -110,13 +109,13 @@
     input {
       margin-top: 3vh;
     }
-    textarea{
-      height:40vh;
+    textarea {
+      height: 40vh;
       resize: none;
     }
   }
   .comment_section {
-    width:60%;
+    width: 60%;
     border-radius: 5px;
 
     p {
@@ -127,10 +126,10 @@
     padding: 20px;
     margin-top: 30px;
   }
-  h2{
-    padding-top:10vh;
+  h2 {
+    padding-top: 10vh;
   }
-  .contact-main{
+  .contact-main {
     padding-bottom: 10vh;
   }
 }

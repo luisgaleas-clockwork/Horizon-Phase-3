@@ -15,7 +15,7 @@ describe("Checking connection of enpoint /", () => {
         chai.request(app).get("/")
             .end((error, res) => {
                 res.should.have.status(200)
-                res.should.be.an('object')
+   
                 done()
             })
     });
@@ -72,6 +72,7 @@ describe("Checking connection of enpoint /api/comment", () => {
     });
 });
 
+// Previous testing
 
 // describe("Checking connection of enpoint /api/product", () => {
 //     it('Connection', (done) => {

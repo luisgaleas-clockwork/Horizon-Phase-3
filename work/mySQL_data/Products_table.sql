@@ -1,8 +1,8 @@
--- CREATE DATABASE horizon_db;
+CREATE DATABASE horizon_db;
 
--- USE horizon_db;
+USE horizon_db;
 
-
+drop table Products;
 
 CREATE TABLE Products 
 (
@@ -153,17 +153,17 @@ INSERT INTO Products (product_name,artist,img_url,descripton,genre)
  "unknown"
  );
 
--- SELECT 
---         Products.idProducts,
---         Products.product_name,
---         Products.descripton,
---         Products.img_url,
---         Products.artist,
---         Products.genre,
---         Price.price,
---         Price.currency
---     FROM Products 
---     INNER JOIN Price ON Price.idProducts = Products.idProducts;
+SELECT 
+        Products.idProducts,
+        Products.product_name,
+        Products.descripton,
+        Products.img_url,
+        Products.artist,
+        Products.genre,
+        Price.price,
+        Price.currency
+    FROM Products 
+    INNER JOIN Price ON Price.idProducts = Products.idProducts;
 
 
 

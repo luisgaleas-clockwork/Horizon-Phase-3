@@ -9,7 +9,7 @@ function IndexPage() {
   return (
     <div>
       <Header />
-      <Intro/>
+      <Intro />
       <Feature />
     </div>
   );

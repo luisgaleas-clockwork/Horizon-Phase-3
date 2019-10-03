@@ -62,5 +62,3 @@ VALUES
 "mr.Stranger@gmail.com",
 "This is fine. Might hack it later"
 );
-
-select * from Contacts;

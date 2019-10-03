@@ -31,11 +31,11 @@
     }
   }
   a {
-    color:#b00020;
+    color: #b00020;
     transition: 1s;
   }
-  a:hover{
-    color:#b1374d
+  a:hover {
+    color: #b1374d;
   }
 }
 
@@ -45,30 +45,30 @@
   }
   .bio {
     text-align: left;
-    padding:10px;
-    width:30vw;
-    margin-left:15vw;
+    padding: 10px;
+    width: 30vw;
+    margin-left: 15vw;
     h3,
     p {
       display: block;
     }
-    p{
-      margin-top:2vh;
+    p {
+      margin-top: 2vh;
     }
     i {
       padding: 30px, 10px;
     }
   }
-  .info_items{
-    margin-left:30px;
+  .info_items {
+    margin-left: 30px;
   }
 }
 
-@media only screen and (min-width: 1400px){
-.bio{
-  margin-left:25vw;
-}
-.info_items{
-  margin-left:10vw;
-}
+@media only screen and (min-width: 1400px) {
+  .bio {
+    margin-left: 25vw;
+  }
+  .info_items {
+    margin-left: 10vw;
+  }
 }

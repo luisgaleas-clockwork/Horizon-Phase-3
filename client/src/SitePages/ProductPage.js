@@ -61,8 +61,6 @@ class Product extends React.Component {
           console.log(this.state)
         }).catch((e) => console.log('error - ', e));
     }
-
-
   }
 
   componentDidMount() {
@@ -84,10 +82,18 @@ class Product extends React.Component {
     return (
       <div className="App">
         <PHeader />
-        <Filter none={this.none} high={this.high} low={this.low} genre={this.musicGenre} />
+        <Filter
+          none={this.none}
+          high={this.high}
+          low={this.low}
+          genre={this.musicGenre}
+        />
         <div className="cover__container">
           {this.state.album.map((info) => {
-            return <Cover info={info} state={this.state}click={this.click} />
+            return <Cover 
+            info={info} 
+            state={this.state} 
+            click={this.click} />
           })}
         </div>
       </div>

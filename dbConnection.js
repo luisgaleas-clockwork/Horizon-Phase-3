@@ -1,11 +1,11 @@
 const mysql = require("mysql");
 
-    const connection = mysql.createConnection({
-        host: "localhost",
-        user: "root",
-        password: process.env.MYPASSWORD,
-        port: "3306",
-        database: "horizon_db"
-    })
-    
+const connection = mysql.createConnection({
+    host: "localhost",
+    user: process.env.USERNAME,
+    password: process.env.MYPASSWORD,
+    port: process.env.PORT,
+    database: process.env.DATABASE
+})
+
 module.exports = connection

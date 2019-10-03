@@ -1,7 +1,7 @@
 @media only screen and (min-width: 320px) {
   .jumbo__bg {
     background-color: #b00020;
-    margin:auto;
+    margin: auto;
   }
   .jumbo-home {
     background-color: #b00020;
@@ -29,7 +29,7 @@
     // }
   }
   .row {
-    margin:auto;
+    margin: auto;
   }
   #Ac2,
   #Ac3,
@@ -54,10 +54,6 @@
       height: 180px;
       width: 180px;
     }
-    // img:hover{
-    //     height:310px;
-    //     width:310px;
-    // }
   }
   .row {
     margin-top: 1vh;
@@ -72,23 +68,23 @@
     padding-right: 0;
   }
 }
-@media only screen and (min-width: 1024px){
-    .jumbo-home {
-        height: 35vh;
-        overflow: show;
-        p {
-          margin-top: 5vh;
-        }
-    
-        img {
-          height: 220px;
-          width: 220px;
-        }
-        // img:hover{
-        //     height:310px;
-        //     width:310px;
-        // }
-      }
+@media only screen and (min-width: 1024px) {
+  .jumbo-home {
+    height: 35vh;
+    overflow: show;
+    p {
+      margin-top: 5vh;
+    }
+
+    img {
+      height: 220px;
+      width: 220px;
+    }
+    // img:hover{
+    //     height:310px;
+    //     width:310px;
+    // }
+  }
 }
 @media only screen and (min-width: 1400px) {
   .jumbo-home {

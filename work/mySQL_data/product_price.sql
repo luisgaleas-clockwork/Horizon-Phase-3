@@ -1,4 +1,3 @@
--- drop table Price;
 
 CREATE TABLE Price
 (
