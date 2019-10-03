@@ -92,7 +92,7 @@
     height: 2px;
     width: 0;
     background-color: white;
-    transition: width 2s ease;
+    transition: width 500ms ease;
   }
   .nav-link:hover::after {
     width: 100%;

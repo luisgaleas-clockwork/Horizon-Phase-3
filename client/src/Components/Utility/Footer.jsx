@@ -29,7 +29,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/luisi.g__/"><i class="fab fa-instagram"></i></a>
           <a href="https://github.com/luisgaleas-clockwork"><i class="fab fa-github-square"></i></a>
         </div>
-        <p>&copy; Horizon.io 2019</p>
+        <p>&copy; Horizon.io last updated Oct 3, 2019</p>
       </div>
     </footer>
   )
